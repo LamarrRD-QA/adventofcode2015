@@ -1,12 +1,12 @@
 from src.solution_template import Solver
 
-FILENAME = 'resources/input_day1.txt'
-
 
 class DayOne(Solver):
 
+    filename = 'resources/input_day1.txt'
+
     def solve_part1(self):
-        with open(FILENAME) as f:
+        with open(self.filename) as f:
             building_floor = 0
             while True:
                 c = f.read(1)
@@ -20,7 +20,7 @@ class DayOne(Solver):
             print("Solution for Day 1, Part 1 is: {}".format(building_floor))
 
     def solve_part2(self):
-        with open(FILENAME) as f:
+        with open(self.filename) as f:
             building_floor = 0
             file_pos = 0
             while True:

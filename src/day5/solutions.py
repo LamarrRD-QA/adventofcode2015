@@ -35,11 +35,11 @@ def is_nice_string_2(test_string):
 
 
 class DayFive(Solver):
-    FILENAME = 'resources/input_day5.txt'
+    filename = 'resources/input_day5.txt'
 
     def solve_part1(self):
         count = 0
-        with open(self.FILENAME) as f:
+        with open(self.filename) as f:
             for line in f:
                 if is_nice_string(line.rstrip()):
                     count += 1
@@ -48,7 +48,7 @@ class DayFive(Solver):
 
     def solve_part2(self):
         count = 0
-        with open(self.FILENAME) as f:
+        with open(self.filename) as f:
             for line in f:
                 if is_nice_string_2(line.rstrip()):
                     count += 1

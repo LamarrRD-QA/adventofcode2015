@@ -3,6 +3,11 @@ from abc import ABC, abstractmethod
 
 class Solver(ABC):
 
+    @property
+    @abstractmethod
+    def filename(self):
+        pass
+
     @abstractmethod
     def solve_part1(self):
         pass

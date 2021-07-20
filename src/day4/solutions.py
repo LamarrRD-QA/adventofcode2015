@@ -5,10 +5,10 @@ from src.solution_template import Solver
 
 
 class DayFour(Solver):
-    FILENAME = 'resources/input_day4.txt'
+    filename = 'resources/input_day4.txt'
 
     def solve_part1(self):
-        f = open(self.FILENAME)
+        f = open(self.filename)
         data = f.read().rstrip()
         f.close()
 
@@ -20,7 +20,7 @@ class DayFour(Solver):
                 break
 
     def solve_part2(self):
-        f = open(self.FILENAME)
+        f = open(self.filename)
         data = f.read().rstrip()
         f.close()
 
